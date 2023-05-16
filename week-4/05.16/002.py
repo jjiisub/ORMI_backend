@@ -12,7 +12,7 @@ def md_to_html(data):
     data = re.sub(r'\*(.*)\*', r'<em>\1</em>', data)
     # <pre><code>
     data = re.sub(r'(```)[\w]+', '<pre><code>', data)
-    data = re.sub(r'(```)', '</pre></code>', data)
+    data = re.sub(r'(```)', '</code></pre>', data)
     # <code>
     data = re.sub(r'\`(.*)\`', r'<code>\1</code>', data, flags=re.M)
     # <li>
@@ -23,12 +23,12 @@ def md_to_html(data):
     data = re.sub(r'\d+\.\s(.*)$', r'<li>\1</li>', data, flags=re.M)
     # <q>
     data = re.sub(r'^> (.*)', r'<q>\1</q>', data, flags=re.M)
-    # <br>
-    data = re.sub(r'(^---)', r'<br>', data, flags=re.M)
+    # <hr>
+    data = re.sub(r'(^---)', r'<hr>', data, flags=re.M)
     # <a>
     data = re.sub(r'^\[(.+?)\]\((.+?)\)', r'<a href="\2">\1</a>', data, flags=re.M)
     # <img>
-    data = re.sub(r'!\[(.+?)\]\((.+?)\)', r'<img href="\2">\1</img>', data, flags=re.M)
+    data = re.sub(r'!\[(.+?)\]\((.+?)\)', r'<img src="\2">\1</img>', data, flags=re.M)
     return data
 
 def insert_ul(text):
