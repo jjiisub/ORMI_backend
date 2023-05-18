@@ -44,4 +44,4 @@ curr = curr.next
 
 while curr:
     if curr.pre:
-        
+        pass
