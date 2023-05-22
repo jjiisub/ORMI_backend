@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tailwindcss</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- https://tailwindcss.com/docs/margin -->
+    <!-- https://tailwindcss.com/docs/padding -->
+    <!-- https://tailwindcss.com/docs/font-weight -->
+    <!-- https://tailwindcss.com/docs/text-color -->
+    <div class="text-xs">hello world</div>
+    <div class="text-sm">hello world</div>
+    <div class="text-base">hello world</div>
+    <div class="text-lg">hello world</div>
+    <div class="text-2xl">hello world</div>
+    <div class="text-5xl">hello world</div>
+
+    <div class="border border-gray-950 p-3">hello</div>
+    <div class="border border-gray-950 mt-2">hello</div>
+    <div class="border border-gray-950 mt-2 pl-2">hello</div>
+    <!-- p, pt, pr, pb, pl -->
+    <!-- m, mt, mr, mb, ml -->
+    <br />
+
+    <!-- X axis & y axis : mx my -->
+
+    <div class="border border-gray-950 my-2">hello</div>
+    <div class="border border-gray-950 my-2">hello</div>
+    <div class="border border-gray-950 my-2">hello</div>
+    <br />
+
+    <div class="space-y-2">
+      <div class="border border-gray-950 p-3">hello</div>
+      <div class="border border-gray-950 p-3">hello</div>
+      <div class="border border-gray-950 p-3">hello</div>
+    </div>
+    <br />
+
+    <div>
+      <!-- reset.css 때문에 li tag 앞에 점 X -->
+      <!-- https://tailwindcss.com/docs/list-style-type -->
+      <div class="p-5">
+        <ul class="list-disc">
+          <li>hello</li>
+          <li>hello</li>
+          <li>hello</li>
+          <li>hello</li>
+          <li>hello</li>
+        </ul>
+      </div>
+    </div>
+
+      <div class="p-5">
+        <ul class="list-disc list-inside">
+          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur aut impedit a iste maxime? Iste, sunt? Cupiditate, omnis vitae ratione expedita rerum tempora deserunt qui explicabo nesciunt. Possimus, id culpa.
+          Aliquid maiores minus cumque eos rerum beatae nulla, dicta voluptas praesentium. Necessitatibus amet, voluptatibus harum pariatur ullam repellendus, beatae enim accusamus placeat sequi consectetur numquam doloremque veniam suscipit laborum quis?
+          Itaque sunt impedit sit minus possimus vero, perspiciatis hic dolor temporibus. Consectetur ea, nesciunt aperiam quos fuga quo nihil? Possimus corporis eveniet fuga nisi repellat odit explicabo commodi laboriosam? Corrupti?
+          Recusandae amet quaerat, consectetur odit reprehenderit veniam aspernatur laborum dicta esse ipsum assumenda sit commodi velit? Ab consequatur neque eveniet repellat accusantium consequuntur, doloribus delectus alias eligendi aliquam? Autem, quia.
+          Consequuntur neque, accusamus hic placeat voluptates nihil aut autem vitae, ullam eaque obcaecati modi fugiat maiores amet repellendus minus beatae alias rerum rem, soluta ipsum minima suscipit. Debitis, nemo quidem.</li>
+          <li>hello</li>
+          <li>hello</li>
+          <li>hello</li>
+          <li>hello</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="p-5">
+        <!-- ol 태그 사용이 바람직 -->
+        <ul class="list-decimal">
+          <li>hello</li>
+          <li>hello</li>
+          <li>hello</li>
+          <li>hello</li>
+          <li>hello</li>
+        </ul>
+      </div>
+    </div>
+    
+    <br>
+    <!-- rounded-full w24 -->
+    <!-- https://tailwindcss.com/docs/border-radius#rounded-corners -->
+    <div class="w-16 h-16 bg-red-200"></div>
+    <div class="w-16 h-16 bg-red-200 rounded"></div>
+    <div class="w-16 h-16 bg-red-200 rounded-2xl"></div>
+    <div class="w-16 h-16 bg-red-200 rounded-full"></div>
+    
+    <!-- https://tailwindcss.com/docs/border-radius -->
+    <!-- https://tailwindcss.com/docs/border-width -->
+    <div class="border-l-4">hello world</div>
+    <div class="border-l-4 border-gray-500 pl-2">hello world</div>
+    <div class="border-t-4 border-gray-500">hello world</div>
+    <div class="border-b-4 border-gray-500">hello world</div>
+    <div class="border-r-4 border-gray-500">hello world</div>
+
+    <!-- https://tailwindcss.com/docs/adding-custom-styles#using-arbitrary-values -->
+    <div class="text-[17px]">hello world</div>
+    <div class="mt-[17px]">hello world</div>
+    <div class="bg-[#4267B2] text-white">facebook</div>
+  </body>
+</html>
