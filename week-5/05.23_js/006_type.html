@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <body>
+    <h1>변수의 타입</h1>
+    <script>
+      // python : int, float, str, bool, list, tuple, dict, set
+      // JavaScript : Number(int, float), String(str), Boolean(bool), Array(list), Object(dict), Set(set), Map(dict)
+      console.log(typeof 10);
+      console.log(typeof 10.1);
+      console.log(typeof "hello");
+      console.log(typeof true);
+      console.log(typeof [1, 2, 3]); // JavaScript가 어려운 이유
+      console.log(typeof { one: 1, two: 2 }); // object
+      console.log(typeof new Set("hello")); // object
+      console.log(typeof new Map()); // object
+      console.log(typeof function () {});
+      console.log(typeof /RE/g);
+
+      // ------------------------------------------------------------
+      console.log(10 + "10"); // 앞의 10을 형변환하여 1010
+      console.log("10" + 10); // 뒤의 10을 형변환하여 1010
+      console.log("10" + true); // 뒤의 true를 형변환하여 10ture
+      // 기본적으로 문자열로 형변환
+      // 에러를 최소화하는 방향으로 설계되어 있음
+      // JavaScript는 예외가 많음 -> 규칙을 특정하기 어려움
+
+      // ------------------------------------------------------------
+      // 형변환
+      console.log(Number("10")); //  권장 X, parseInt를 권장
+      console.log(Boolean("10"));
+      console.log(String(10)); // 권장 X, toString method 권장
+      console.log(parseInt(10.1));
+      console.log(parseInt("10"));
+      console.log(~~10.1); // 비트연산자를 이용한 형변환
+      // 알고리즘 풀이에만 사용, 실무에서는 X
+    </script>
+  </body>
+</html>

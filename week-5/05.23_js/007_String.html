@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <body>
+    <h1>String</h1>
+    <script>
+      let txt = "hello world";
+
+      txt + txt;
+      txt[0];
+      //   txt[-1]  X, undefined
+      //   txt[2:5] X
+
+      txt.indexOf("o");
+      txt.search("o");
+
+      //   없는 값은 -1
+      txt.indexOf("z");
+      txt.search("z");
+
+      //   search로 정규표현식 사용 ㄱㄴ
+      let regExp = /[ea]llo/;
+      txt.search(regExp);
+
+      //   문자열 슬라이싱
+      //   slice(시작인덱스, 종료인덱스) : 시작인덱스부터 종료인덱스-1까지 반환합니다.
+      txt.slice(1, 5);
+      txt.slice(1);
+      //   txt.slice(3, 1); 작동하지 않음
+
+      // substring(시작인덱스, 종료인덱스) : 시작인덱스부터 종료인덱스-1까지 반환합니다.
+      txt.substring(1, 3);
+      txt.substring(3, 1);
+
+      // replace(바꿀, 바뀔)
+      txt.replace("world", "jeju");
+      // 정규표현식이 repalce 내에서 사용 가능
+      let txt2 = "hello world hello world";
+      txt2.replace("world", "jeju");
+      txt2.replace(/world/g, "jeju");
+
+      // 있지만 사용하기는 어려움
+      txt2.replaceAll("world", "jeju");
+
+      txt2.toUpperCase();
+      txt2.toLowerCase();
+
+      // split
+      txt2.split(" ");
+      txt2.split("-");
+
+      //   trim(strip in python)
+      "      a b c       ".trim();
+    </script>
+  </body>
+</html>

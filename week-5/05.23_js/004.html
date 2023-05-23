@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <body>
+    <script>
+      console.log("hello world"); // print와 같음
+      const x = [10, 20, 30]; // 변수 선언 3가지 -> 대부분 const로 선언 & var는 적절 X
+      // var x : 전역변수 x를 선언 (함수 스코프)
+      // let x : 변경가능하고 블록스코프를 갖는 x
+      // const x : 변경 불가능, 블록스코프를 갖는 x
+      console.dir(x); // print(dir(x))와 같음
+      const y = {
+        one: 1,
+        two: 2,
+        three: 3,
+      };
+      console.table(y);
+
+      console.group("one");
+      console.log("가/팀원");
+      console.log("나/팀원");
+      console.log("다/팀원");
+      console.group("two");
+      console.log("라/팀원");
+      console.log("마/팀원");
+      console.log("바/팀원");
+      console.groupEnd();
+      console.group("end");
+      console.groupEnd();
+      console.group("end");
+
+      //   아래는 자주 사용하지 않음
+      //   console.error("뷁");
+      //   console.warn
+      //   console.info
+      //   ...
+
+      console.log("%c경고!", "color:red; font-size:26px;");
+      // https://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20 와 같은 사이트를 이용해서 콘솔이나 쉘을 더 아름답게(?) 꾸며줄 수 있습니다.
+    </script>
+  </body>
+</html>

@@ -1,0 +1,4 @@
+> txt.substring(5, 1);
+< "ello"
+> txt.substring(6, 1);
+< "ello "
